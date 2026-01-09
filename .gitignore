@@ -1,60 +1,86 @@
-# ========================
-# Node dependencies
-# ========================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# 💳 Mini FinTech Wallet Application
 
-# ========================
-# Environment variables
-# ========================
-.env
-.env.local
-.env.development
-.env.production
+A full-stack **Mini FinTech Wallet** web application that allows users to view wallet balance, manage transactions, add money, and transfer funds while applying real-world business rules such as transaction fees and limits.
 
-# ========================
-# Backend build / logs
-# ========================
-logs/
-*.log
-coverage/
+This project was developed as part of a **Full-Stack Developer Assignment** to demonstrate frontend–backend integration, business logic handling, UI/UX design, and documentation skills.
 
-# ========================
-# Frontend build
-# ========================
-client/build/
-client/dist/
-build/
-dist/
+---
 
-# ========================
-# OS files
-# ========================
-.DS_Store
-Thumbs.db
+## 📌 Assignment Objective
 
-# ========================
-# IDE / Editor
-# ========================
-.vscode/
-.idea/
-*.swp
+Build a fintech-themed wallet application that showcases:
+- API integration
+- State management
+- Business rules (fees & limits)
+- Error handling and UI states
+- Clear documentation and testing
 
-# ========================
-# MongoDB
-# ========================
-data/db/
-dump/
+---
 
-# ========================
-# Testing
-# ========================
-.nyc_output/
+## 🚀 Features
 
-# ========================
-# Optional: Docker
-# ========================
-docker-compose.override.yml
+### Dashboard
+- Displays **current wallet balance**
+- Shows **last 10 transactions**
+- Loading and empty states implemented
+
+### Add Money
+- Add funds using a validated form
+- Records a **credit transaction**
+- Updates wallet balance after API call
+
+### Transfer Money
+- Transfer money to another user
+- **2% transaction fee** applied
+- **Maximum per-transaction limit: ₹10,000**
+- Confirmation modal before transfer
+- Records **debit + fee transactions**
+
+### Transaction History
+- View all transactions
+- Filter by:
+  - Date range
+  - Transaction status (success / failed)
+- Soft delete transactions
+
+### Error Handling & UX
+- Toasts / inline error messages
+- Global loading indicators
+- Clear empty states
+- Input validation
+
+---
+
+## 🧠 Business Rules
+
+- **Transaction Fee:** 2% of transfer amount (configurable)
+- **Transaction Limit:** ₹10,000 per transaction
+- **Transaction Status Flow:**
+  - `pending` → `success` or `failed`
+  - Failed transactions include reason
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React (Hooks)
+- React Router
+- Axios / Fetch API
+
+### Backend
+- Node.js
+- Express.js
+- Mock API using `json-server`
+
+### Storage
+- JSON-based mock database
+
+### Testing
+- Jest
+- React Testing Library
+
+---
+
+## 📂 Project Structure
+
