@@ -1,0 +1,60 @@
+# ========================
+# Node dependencies
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================
+# Environment variables
+# ========================
+.env
+.env.local
+.env.development
+.env.production
+
+# ========================
+# Backend build / logs
+# ========================
+logs/
+*.log
+coverage/
+
+# ========================
+# Frontend build
+# ========================
+client/build/
+client/dist/
+build/
+dist/
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# MongoDB
+# ========================
+data/db/
+dump/
+
+# ========================
+# Testing
+# ========================
+.nyc_output/
+
+# ========================
+# Optional: Docker
+# ========================
+docker-compose.override.yml
