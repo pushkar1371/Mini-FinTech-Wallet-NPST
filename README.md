@@ -1,3 +1,5 @@
+![TEST](screenshots/dashboard.png)
+
 # 💳 Mini FinTech Wallet (Option B – React + Express + JSON Storage)
 
 A full-stack **Mini FinTech Wallet** web application that allows users to view wallet balance, manage transactions, add money, and transfer funds while applying real-world business rules such as transaction fees and limits.
